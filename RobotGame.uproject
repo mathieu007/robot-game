@@ -1,20 +1,28 @@
 {
   "FileVersion": 3,
-  "EngineAssociation": "",
-	"Category": "",
-	"Description": "First Person Shooter: Robot Game",
-	"Modules": [
-		{
-			"Name": "RobotGame",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
-  "Plugins": [],
-	"TargetPlatforms": [
-		"Windows"
-	],
-	"AdditionalRootDirectories": [],
-	"AdditionalPluginDirectories": [],
-	"EpicSampleNameHash": ""
+  "EngineAssociation": "5.6",
+  "Category": "",
+  "Description": "First Person Shooter: Robot Game",
+  "Modules": [
+    {
+      "Name": "RobotGame",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "VisualStudioTools",
+      "Enabled": true,
+      "SupportedTargetPlatforms": [
+        "Win64"
+      ]
+    }
+  ],
+  "TargetPlatforms": [
+    "Windows"
+  ],
+  "AdditionalRootDirectories": [],
+  "AdditionalPluginDirectories": [],
+  "EpicSampleNameHash": ""
 }

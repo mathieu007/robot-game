@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <!-- Do NOT break on NU1701 during restore/build -->
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+    <RestoreTreatWarningsAsErrors>false</RestoreTreatWarningsAsErrors>
+  </PropertyGroup>
+</Project>
