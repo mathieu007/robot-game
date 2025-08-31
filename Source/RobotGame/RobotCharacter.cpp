@@ -1,10 +1,12 @@
 #include "RobotCharacter.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/InputComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "RobotProjectile.h"
 #include "Engine/World.h"
+#include "Engine/EngineTypes.h"
 
 ARobotCharacter::ARobotCharacter()
 {

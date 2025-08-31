@@ -1,6 +1,6 @@
 {
-	"FileVersion": 3,
-	"EngineAssociation": "5.6",
+  "FileVersion": 3,
+  "EngineAssociation": "",
 	"Category": "",
 	"Description": "First Person Shooter: Robot Game",
 	"Modules": [
@@ -10,15 +10,7 @@
 			"LoadingPhase": "Default"
 		}
 	],
-	"Plugins": [
-		{
-			"Name": "VisualStudioTools",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64"
-			]
-		}
-	],
+  "Plugins": [],
 	"TargetPlatforms": [
 		"Windows"
 	],
