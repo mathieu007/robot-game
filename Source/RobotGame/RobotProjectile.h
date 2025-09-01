@@ -16,6 +16,8 @@ public:
     ARobotProjectile();
 
 protected:
+    virtual void BeginPlay() override;
+
     UPROPERTY(VisibleDefaultsOnly, Category = "Projectile")
     USphereComponent* CollisionComp;
 
@@ -25,4 +27,3 @@ protected:
     UFUNCTION()
     void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 };
-

@@ -24,6 +24,18 @@ ARobotProjectile::ARobotProjectile()
     InitialLifeSpan = 3.0f;
 }
 
+void ARobotProjectile::BeginPlay()
+{
+    Super::BeginPlay();
+
+    if (ProjectileMovement)
+    {
+        // Move forward along the actor's forward vector at InitialSpeed
+        ProjectileMovement->SetVelocityInLocalSpace(FVector::ForwardVector * ProjectileMovement->InitialSpeed);
+        ProjectileMovement->Activate();
+    }
+}
+
 void ARobotProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
     if (OtherActor && OtherActor != this && OtherComp)
@@ -36,4 +48,3 @@ void ARobotProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 
     Destroy();
 }
-

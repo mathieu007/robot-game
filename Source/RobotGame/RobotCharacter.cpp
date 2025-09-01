@@ -94,7 +94,7 @@ void ARobotCharacter::Fire()
         Params.Instigator = this;
         Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-        TSubclassOf<ARobotProjectile> ClassToSpawn = ProjectileClass ? ProjectileClass : ARobotProjectile::StaticClass();
+        UClass* ClassToSpawn = ProjectileClass ? ProjectileClass.Get() : ARobotProjectile::StaticClass();
         World->SpawnActor<ARobotProjectile>(ClassToSpawn, SpawnLocation, SpawnRotation, Params);
     }
 }
